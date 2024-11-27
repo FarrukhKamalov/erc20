@@ -1,0 +1,161 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_buyer",
+						"type": "address"
+					}
+				],
+				"name": "Bought",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_seller",
+						"type": "address"
+					}
+				],
+				"name": "Sold",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amountToSell",
+						"type": "uint256"
+					}
+				],
+				"name": "sell",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "token",
+				"outputs": [
+					{
+						"internalType": "contract IERC20",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "tokenBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BirBalo.sol": "MShop"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BirBalo.sol": {
+			"keccak256": "0x1b5204e350adef654464b8f17105f1b8b1037b3afece85f44d55be30535dbeba",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa6bef9fc70193cd322a0226f2a4231b94aafeac27b58adac2f614c3259f271c",
+				"dweb:/ipfs/QmTQoHLPZ2qjUroyf5mEeG5Tg6xqK8uZwPJX1oNM6TsLsh"
+			]
+		},
+		"ERC20.sol": {
+			"keccak256": "0x69065896f4e6b387f41ac8db470d51765e6d56fd1e6aa10db0d489b59e614507",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://04f0681652c69b97fd9a5f92bfb1e3ad8cee10419af73e629f9423cce482d812",
+				"dweb:/ipfs/QmaDXCwq92Cqp9Y9eCsXC1qphVhyARYyGehYMQ6TbqPt1U"
+			]
+		},
+		"IERC20.sol": {
+			"keccak256": "0xa02e36d38824145546ed7379a523ae8a337ca9be829057d04cc71b7d0b2829d9",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fe6acf39b8ddec1fd934a253207783545e32d59000fbbcbdcd6188e5b493425b",
+				"dweb:/ipfs/QmZNNPZ2XXZeGeUVgJfTpM7pU1mDaLg7KnE9PDHkTtgbAp"
+			]
+		}
+	},
+	"version": 1
+}
